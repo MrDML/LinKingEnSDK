@@ -1,0 +1,42 @@
+//
+//  LESDKManager.h
+//  LinKingEnSDK
+//
+//  Created by leoan on 2020/8/7.
+//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class LEOauthManager;
+@class LEAdManager;
+@class LEIronSourceAdManager;
+@class LEFacebookAdManager;
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LESDKManager : NSObject
+@property (nonatomic, copy) void(^initializeSDKCallBack)(LESDKManager *manager,NSError *error);
+@property (nonatomic, strong,readonly) LEOauthManager *oauthManager;
+@property (nonatomic, strong,readonly) LEAdManager *adManager;
+@property (nonatomic, strong,readonly) LEIronSourceAdManager *ironsAdManager;
+@property (nonatomic, strong,readonly) LEFacebookAdManager *facebookAdManager;
+
++ (instancetype)shared;
+/// 语言bundle，preferredLanguage变化时languageBundle会变化
+/// 可通过手动设置bundle，让选择器支持新的的语言（需要在设置preferredLanguage后设置languageBundle）。欢迎提交PR把语言文件提交上来~
+@property (strong, nonatomic) NSBundle *_Nullable languageBundle;
+/// 注册SDK
+/// @param appId  平台分发的appId
+/// @param secretkey 平台分发的key
+/// @param complete 完成注册的回调
+- (void)registLinKingSDKAppID:(NSString * _Nonnull)appId withSecretkey:(NSString * _Nonnull)secretkey cmoplete:(void(^_Nonnull)(LESDKManager *manager,NSError *error))complete;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (BOOL)application:(nonnull UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *, id> *)options;
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts API_AVAILABLE(ios(13.0));
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler;
+@end
+
+NS_ASSUME_NONNULL_END

@@ -1,0 +1,6 @@
+framework module LinKingEnSDK {
+  umbrella header "LinKingEnSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

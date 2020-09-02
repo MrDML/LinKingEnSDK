@@ -1,0 +1,21 @@
+//
+//  LELoginController.h
+//  LinKingEnSDK
+//
+//  Created by leoan on 2020/8/10.
+//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//
+
+#import "LEBaseViewController.h"
+
+@class LEUser;
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LELoginController : LEBaseViewController
+@property (nonatomic, assign) BOOL isHiddenCloseView;
+@property (nonatomic, assign) BOOL agreement;
+@property (nonatomic,copy)void(^changeAccountCallBack)(void);
+@property (nonatomic,copy)void(^loginCompleteCallBack)(LEUser *_Nullable user,NSError * _Nullable error);
+@end
+
+NS_ASSUME_NONNULL_END
