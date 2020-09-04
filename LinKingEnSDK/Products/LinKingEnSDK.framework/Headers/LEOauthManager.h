@@ -33,7 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 显示矩阵
 /// @param frame frame description
 -(void)showMatrixVieWithFrame:(CGRect)frame;
-
+// 隐藏矩阵
+- (void)hiddenMatrixView;
 @end
 
 NS_ASSUME_NONNULL_END

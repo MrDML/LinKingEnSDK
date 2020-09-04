@@ -9,29 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-//typedef NS_ENUM(NSInteger,LEPOINTPLATFORM) {
-//    LEPOINTPLATFORM_NONE,
-//    LEPOINTPLATFORM_LK,
-//    LEPOINTPLATFORM_FB
-//};
-
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol LEPointManagerDelegate <NSObject>
-
-@optional
-- (void)activatePointWithFail:(NSError *)error;
-
-
-
-@end
 @interface LEPointManager : NSObject
-@property(nonatomic, assign) id <LEPointManagerDelegate> delegate;
 + (instancetype)shared;
-// 激活打点
-- (void)activatePointWithComplete:(void(^)(NSError * _Nullable error))complete;
-
-
 // 广告打点
 - (void)adLogEventName:(NSString *)eventName withParameters:(NSDictionary *_Nullable)params complete:(void(^_Nullable)(NSError *_Nullableerror))complete;
 
@@ -174,13 +155,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设置用户id
 /// @param userId <#userId description#>
 - (void)logTrackSetCustomerUserID:(NSString *)userId;
-
-
-
-//
-//// 标准打点
-//- (void)standardLogEventName:(NSString *)eventName withParameters:(NSDictionary * _Nullable)params complete:(void(^_Nullable)(NSError * _Nullable error))complete;
-//- (void)standardLogEventName:(NSString *)eventName complete:(void(^_Nullable)(NSError *_Nullable error))complete;
 
 // 自定义打点
 - (void)customeLogEventName:(NSString *)eventName withParameters:(NSDictionary * _Nullable)params complete:(void(^_Nullable)(NSError *_Nullable error))complete;
