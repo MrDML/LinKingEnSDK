@@ -17,5 +17,7 @@
 #import <LinKingEnSDK/LEAdManager.h>
 #import <LinKingEnSDK/LEFBAnalyticsManager.h>
 #import <LinKingEnSDK/LEAFManager.h>
-#import <LinKingEnSDK/LEApplePay.h>
+#import <LinKingEnSDK/LEApplePayManager.h>
+#import <LinKingEnSDK/LEGoods.h>
+
 

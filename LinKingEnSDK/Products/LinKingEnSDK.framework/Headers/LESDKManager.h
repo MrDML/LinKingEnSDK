@@ -13,7 +13,7 @@
 @class LEIronSourceAdManager;
 @class LEFacebookAdManager;
 @class LEPointManager;
-@class LEApplePay;
+@class LEApplePayManager;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LESDKManager : NSObject
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong,readonly) LEIronSourceAdManager *ironsAdManager;
 @property (nonatomic, strong,readonly) LEFacebookAdManager *facebookAdManager;
 @property (nonatomic, strong,readonly) LEPointManager *pointManager;
-@property (nonatomic, strong,readonly) LEApplePay *payManager;
+@property (nonatomic, strong,readonly) LEApplePayManager *payManager;
 
 + (instancetype)shared;
 /// 语言bundle，preferredLanguage变化时languageBundle会变化
@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registLinKingSDKAppID:(NSString * _Nonnull)appId withSecretkey:(NSString * _Nonnull)secretkey cmoplete:(void(^_Nonnull)(LESDKManager *manager,NSError *error))complete;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (void)applicationWillTerminate:(UIApplication *)application;
 - (BOOL)application:(nonnull UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *, id> *)options;
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
