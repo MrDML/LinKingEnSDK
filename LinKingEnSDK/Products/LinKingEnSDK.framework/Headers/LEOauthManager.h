@@ -29,12 +29,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)hiddenFloatViewDashboard;
 /// 退出登录
 - (void)logOutSDK;
-
 /// 显示矩阵
 /// @param frame frame description
 -(void)showMatrixVieWithFrame:(CGRect)frame;
 // 隐藏矩阵
 - (void)hiddenMatrixView;
+// 展示粉丝页
+- (void)showFacebookFansPage;
 @end
 
 NS_ASSUME_NONNULL_END

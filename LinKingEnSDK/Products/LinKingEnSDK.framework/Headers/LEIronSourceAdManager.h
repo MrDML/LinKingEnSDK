@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 /// 初始化广告
-- (void)initializeIronSourceAdConfig;
+- (void)registerIronSourceAd;
 
 
 /// 初始化Banner广告
