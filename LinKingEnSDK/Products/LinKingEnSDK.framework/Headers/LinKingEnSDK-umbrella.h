@@ -67,6 +67,7 @@
 #import "LEFloatView.h"
 #import "LEKeyChainStore.h"
 #import "LEUUID.h"
+#import "LEVersion.h"
 #import "LEImageCache.h"
 #import "UIImageView+LEWebCache.h"
 #import "TAAbstractDotView.h"
