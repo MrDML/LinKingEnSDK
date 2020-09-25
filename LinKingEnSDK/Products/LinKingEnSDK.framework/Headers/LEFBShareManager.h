@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 分享
 /// @param viewController viewController description
-- (void)shareToFacebook:(UIViewController *)viewController;
+- (void)shareToFacebook:(UIViewController *)viewController omplete:(void(^)(NSDictionary <NSString *, id> * _Nullable results,BOOL isCancel,NSError  * _Nullable error))complete;
 
 
 @end

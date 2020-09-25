@@ -27,6 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 新手引导
 - (void)logAchieveCompleteTutorialId:(NSString *)contentId EventServerId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName complete:(void(^_Nullable)(NSError * _Nullable error))complete;
 
+/// 进入游戏
+/// @param serverId 区服ID
+/// @param roleId 角色ID
+/// @param roleName 角色名称
+/// @param enterGame 进入游戏（false单区,true多区）
+/// @param complete 回调
+- (void)logEnterGameServerId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName enterGame:(BOOL)enterGame complete:(void(^_Nullable)(NSError * _Nullable error))complete;
+
 
 /// 用于追踪付款信息配置状态
 /// @param success 是否成功

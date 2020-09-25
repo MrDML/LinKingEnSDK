@@ -8,9 +8,18 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol LEOauthManagerDelegate <NSObject>
+
+@required
+- (void)logOutSDK;
+
+@end
+
 @class LEUser;
 @interface LEOauthManager : NSObject
 + (instancetype)shared;
+@property (nonatomic, assign) id<LEOauthManagerDelegate>delegate;
 @property (nonatomic, strong) UIViewController *viewController;
 @property (nonatomic,copy)void(^changeAccountCallBack)(void);
 @property (nonatomic,copy)void(^bindingAccountCompleteCallBack)(LEUser *user,NSError *error);
