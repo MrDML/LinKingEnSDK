@@ -50,6 +50,8 @@ typedef void (^CompletionHandle)(PurchType type,NSError * _Nullable error);
 //开始内购
 - (void)statrtProductWithId:(NSString *)productId parames:(NSDictionary *)parames completeHandle:(CompletionHandle)handle;
 
+// 查询订阅
+- (void)querysubscribeProduct:(NSString *)productId Complete:(void(^)(NSError *error, NSDictionary*results))complete;
 
 @end
 
