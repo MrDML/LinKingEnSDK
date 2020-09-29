@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)logAchieveStageEvent:(int)stage serverId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName complete:(void(^_Nullable)(NSError * _Nullable error))complete;
 
 /// 新手引导
-- (void)logAchieveCompleteTutorialId:(NSString *)contentId EventServerId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName complete:(void(^_Nullable)(NSError * _Nullable error))complete;
+- (void)logAchieveCompleteTutorialId:(NSString *)contentId content:(NSString *)content EventServerId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName complete:(void(^_Nullable)(NSError * _Nullable error))complete;
 
 /// 进入游戏
 /// @param serverId 区服ID
