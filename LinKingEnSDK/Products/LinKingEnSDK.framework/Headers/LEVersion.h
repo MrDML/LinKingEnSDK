@@ -36,6 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  检测版本 下次提示 本次前往更新 提示版本标题
  */
 - (void)checkVersionWithAlertTitle:(NSString *)alertTitle nextTimeTitle:(NSString *)nextTimeTitle confimTitle:(NSString *)confimTitle skipVersionTitle:(NSString *_Nullable)skipVersionTitle;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
