@@ -14,6 +14,7 @@
 @class LEFacebookAdManager;
 @class LEPointManager;
 @class LEApplePayManager;
+@class LEFBShareManager;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LESDKManager : NSObject
@@ -24,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong,readonly) LEFacebookAdManager *facebookAdManager;
 @property (nonatomic, strong,readonly) LEPointManager *pointManager;
 @property (nonatomic, strong,readonly) LEApplePayManager *payManager;
+@property (nonatomic, strong,readonly) LEFBShareManager *shareManager;
+
 
 + (instancetype)shared;
 /// 语言bundle，preferredLanguage变化时languageBundle会变化
