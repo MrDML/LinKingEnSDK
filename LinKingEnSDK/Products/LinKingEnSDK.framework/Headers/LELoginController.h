@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LELoginController : LEBaseViewController
 @property (nonatomic, assign) BOOL isHiddenCloseView;
 @property (nonatomic, assign) BOOL agreement;
-@property (nonatomic,copy)void(^changeAccountCallBack)(void);
+@property (nonatomic,copy)void(^changeAccountSuccessCallBack)(void);
 @property (nonatomic,copy)void(^loginCompleteCallBack)(LEUser *_Nullable user,NSError * _Nullable error);
 @end
 

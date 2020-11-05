@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol LEOauthManagerDelegate <NSObject>
 
 @required
-- (void)logOutSDK;
+- (void)logOutSDKHandler;
 
 @end
 
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 @property (nonatomic, assign) id<LEOauthManagerDelegate>delegate;
 @property (nonatomic, strong) UIViewController *viewController;
-@property (nonatomic,copy)void(^changeAccountCallBack)(void);
+@property (nonatomic,copy)void(^changeAccountSuccessCallBack)(void);
 @property (nonatomic,copy)void(^bindingAccountCompleteCallBack)(LEUser *user,NSError *error);
 /// Dashboard方式登录
 /// @param viewController 根控制器
@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showFloatViewDashboard:(UIViewController *)viewController;
 // 隐藏仪表盘
 - (void)hiddenFloatViewDashboard;
+- (void)autoLogin;
 /// 退出登录
 - (void)logOutSDK;
 /// 显示矩阵
