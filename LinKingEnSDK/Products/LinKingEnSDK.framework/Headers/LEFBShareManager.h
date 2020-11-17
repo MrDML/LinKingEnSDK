@@ -21,8 +21,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 打开商店中的应用
 - (void)openAppStoreApplication;
 
-/// 打开
+/// 打开YouTuBr
 - (void)jumpYouTuBe;
+
+/// 打开Discord
+- (void)jumpDiscord;
+// 展示粉丝页
+- (void)showFacebookFansPage;
+
 
 @end
 
