@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LEBindingView : UIView
 
+@property (weak, nonatomic) IBOutlet UIButton *faceBookBtn;
 
 @property (nonatomic, copy) void(^closeAlterViewCallBack)(void);
 @property (nonatomic, copy) void(^thirdBindingCallBack)(UIButton *sender);
