@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol LEOauthManagerDelegate <NSObject>
 
 @required
-- (void)logOutSDKHandler;
-
+- (void)logoutSDKCallBack;
+- (void)changeAccountCallBack;
 @end
 
 @class LEUser;

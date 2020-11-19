@@ -19,9 +19,11 @@
 "Change"="تبديل الحساب";
 "User ID"="معرف المستخدم";
 "Link your account"="ربط حسابك";
-"Logout"="تسجيل الخروج";
+"Log out"="تسجيل خروج";
 "The account is already bound"="الحساب مرتبط بالفعل";
-"Link your account to facebook or Google Play to backup your progress"="اربط حسابك بـ Facebook أو Google Play لدعم تقدمك";
+"Bind with Facebook or Google account to save your progress"="اربط بحساب Facebook أو Google لحفظ تقدمك";
+"Bind successfully"="ربط بنجاح";
+"Cancel login"="إلغاء تسجيل الدخول";
 "OR"="أو";
 "LICENSE AGREEMENT"="اتفاقية الترخيص";
 "Facebook"="الفيسبوك";
@@ -31,3 +33,4 @@
 "Invalid login or account login on other devices" = "انتهت صلاحية تسجيل الدخول أو تم تسجيل الحساب من جهاز آخر.";
 "Again login" = "الرجاء تسجيل الدخول مرة أخرى";
 "Could not log in. Please check your network connection and try again" = "لا يمكن التسجيل. تحقق من الانترنت وأعد المحاولة";
+"The system version is too low, please upgrade first, continue to use Sign In With Apple"="إصدار النظام منخفض جدًا ، يرجى الترقية أولاً ، واستمر في استخدام تسجيل الدخول مع Apple";

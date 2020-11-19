@@ -14,9 +14,11 @@
 "Change"="切换";
 "User ID"="User ID";
 "Link your account"="绑定你的账号";
-"Logout"="登出";
+"Log out"="登出";
 "The account is already bound"="该账号已经绑定";
-"Link your account to facebook or Google Play to backup your progress"="将您的帐户链接到Facebook或Google Play，以备份您的进度";
+"Bind with Facebook or Google account to save your progress"="与Facebook或Google帐户绑定以保存进度";
+"Bind successfully"="绑定成功";
+"Cancel login"="取消登录";
 "OR"="或";
 "LICENSE AGREEMENT"="许可协议";
 "Facebook"="Facebook";
@@ -26,3 +28,4 @@
 "Invalid login or account login on other devices"="登录失效或账号在其它设备登录";
 "Again login"="重新登录";
 "Could not log in. Please check your network connection and try again" = "Could not log in. Please check your network connection and try again";
+"The system version is too low, please upgrade first, continue to use Sign In With Apple"="系统版本过低，请先升级，继续使用Sign In With Apple";

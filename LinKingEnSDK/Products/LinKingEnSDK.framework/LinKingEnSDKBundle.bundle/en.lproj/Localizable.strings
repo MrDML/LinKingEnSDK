@@ -20,9 +20,11 @@
 "Change"="change";
 "User ID"="User ID";
 "Link your account"="Link your account";
-"Logout"="Logout";
+"Log out"="Log out";
 "The account is already bound"="The account is already bound";
-"Link your account to facebook or Google Play to backup your progress"="Link your account to facebook or Google Play to backup your progress";
+"Bind with Facebook or Google account to save your progress"="Bind with Facebook or Google account to save your progress";
+"Bind successfully"="Bind successfully";
+"Cancel login"="Cancel login";
 "OR"="OR";
 "LICENSE AGREEMENT"="LICENSE AGREEMENT";
 "Facebook"="Facebook";
@@ -32,3 +34,4 @@
 "Invalid login or account login on other devices"="Invalid login or account login on other devices";
 "Again login"="Again login";
 "Could not log in. Please check your network connection and try again" = "Could not log in. Please check your network connection and try again";
+"The system version is too low, please upgrade first, continue to use Sign In With Apple"="The system version is too low, please upgrade first, continue to use Sign In With Apple";
