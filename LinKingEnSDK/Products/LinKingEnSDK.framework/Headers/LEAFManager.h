@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 注册AF
 /// @param devKey 平台key
 /// @param appleAppID 苹果应用Id
-- (void)registAppsFlyerDevKey:(NSString * _Nonnull)devKey appleAppID:(NSString * _Nonnull)appleAppID;
+- (void)registAppsFlyerDevKey:(NSString * _Nonnull)devKey appleAppID:(NSString * _Nonnull)appleAppID isDebug:(BOOL)isDebug;
 
 /// 用于追踪游戏等级事件
 /// @param level 等级

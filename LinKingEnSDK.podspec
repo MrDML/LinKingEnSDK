@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingEnSDK'
-  s.version          = '0.1.18'
+  s.version          = '0.1.19'
   s.summary          = 'LinKingEnSDK Overseas version'
 
 # This description is used to generate tags and improve search results.
@@ -36,17 +36,16 @@ TODO:  LinKingSDK is Overseas SDK Quick Integration Solution.
   s.vendored_frameworks = "LinKingEnSDK/Products/LinKingEnSDK.framework"
   s.resources = "LinKingEnSDK/Assets/*.*"
   s.dependency 'GoogleSignIn', '~> 5.0.2'
-  s.dependency 'Firebase/Auth'
-  s.dependency 'FBSDKLoginKit', '~> 6.3.0'
-  s.dependency 'FBSDKShareKit', '~> 6.3.0'
-  s.dependency 'AppsFlyerFramework', '~> 5.2.0'
+  s.dependency 'Firebase/Auth', '~> 4.0.0'
+  s.dependency 'FBSDKLoginKit', '~> 9.0.0'
+  s.dependency 'FBSDKShareKit', '~> 9.0.0'
+  s.dependency 'AppsFlyerFramework', '~> 6.1.4'
   s.dependency 'SDWebImage', '>= 5.0.0'
   s.dependency 'Toast', '~> 4.0.0'
   s.dependency 'FBAudienceNetwork'
-  s.dependency 'IronSourceSDK','7.0.0.0'
-  s.dependency 'IronSourceAdMobAdapter','4.3.14.2'
-  s.dependency 'IronSourcePangleAdapter','4.1.5.3'
-  s.dependency 'IronSourceUnityAdsAdapter','4.3.4.1'
+  s.dependency 'IronSourceSDK','7.0.4.0'
+  s.dependency 'IronSourceAdMobAdapter','4.3.18.0'
+  s.dependency 'IronSourcePangleAdapter','4.3.0.0'
   s.xcconfig = {
       'VALID_ARCHS' =>  'arm64 x86_64 armv7',
   }

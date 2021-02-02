@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAlterContentView:(UIView *)contentView;
 - (void)layoutConstraint;
 - (NSError *)responserErrorMsg:(NSString *)msg code:(int)code;
+- (void)showMaskView;
+- (void)hiddenMaskView;
 @end
 
 NS_ASSUME_NONNULL_END
