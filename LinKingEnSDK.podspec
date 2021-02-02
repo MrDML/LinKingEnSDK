@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingEnSDK'
-  s.version          = '0.1.19'
+  s.version          = '0.1.20'
   s.summary          = 'LinKingEnSDK Overseas version'
 
 # This description is used to generate tags and improve search results.
@@ -42,7 +42,7 @@ TODO:  LinKingSDK is Overseas SDK Quick Integration Solution.
   s.dependency 'AppsFlyerFramework', '~> 6.1.4'
   s.dependency 'SDWebImage', '>= 5.0.0'
   s.dependency 'Toast', '~> 4.0.0'
-  s.dependency 'FBAudienceNetwork'
+  s.dependency 'FBAudienceNetwork', '~> 6.2.1'
   s.dependency 'IronSourceSDK','7.0.4.0'
   s.dependency 'IronSourceAdMobAdapter','4.3.18.0'
   s.dependency 'IronSourcePangleAdapter','4.3.0.0'
