@@ -58,6 +58,7 @@
 #import "LEUserCenterView.h"
 #import "LEApplePay.h"
 #import "LEApplePayManager.h"
+#import "LEAppleProduct.h"
 #import "LESandBoxHelper.h"
 #import "LEAFManager.h"
 #import "LEFBAnalyticsManager.h"
