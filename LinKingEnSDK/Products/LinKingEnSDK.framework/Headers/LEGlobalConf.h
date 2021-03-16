@@ -28,7 +28,7 @@
 // 状态栏高度
 #define kStatusBarHeight (kIS_iPhoneX ? 44.f : 20.f)
 // 导航栏高度
-#define kNavBarHeight (44.f+StatusBarHeight)
+#define kNavBarHeight (44.f+kStatusBarHeight)
 // 底部标签栏高度
 #define kTabBarHeight (kIS_iPhoneX ? (49.f+34.f) : 49.f)
 // 安全区域高度
