@@ -14,6 +14,7 @@
 
 "Touch To Start" = "Touch To Start";
 "I have read and agree" = "I have read and agree";
+"agree" = "agree";
 "User Agreement" = "User Agreement";
 "Privacy Policy" = "Privacy Policy";
 "ACCOUNT SETTING" = "ACCOUNT SETTING";
@@ -26,6 +27,9 @@
 "Bind successfully"="Bind successfully";
 "Cancel login"="Cancel login";
 "OR"="OR";
+"Other Login"="Other Login";
+"Guest Login"="Guest Login";
+"Agreement not checked"="Agreement not checked";
 "LICENSE AGREEMENT"="LICENSE AGREEMENT";
 "Facebook"="Facebook";
 "Google"="Google";
@@ -33,5 +37,6 @@
 "Tips"="Tips";
 "Invalid login or account login on other devices"="Invalid login or account login on other devices";
 "Again login"="Again login";
+"Login Successful"="Login Successful";
 "Could not log in. Please check your network connection and try again" = "Could not log in. Please check your network connection and try again";
 "The system version is too low, please upgrade first, continue to use Sign In With Apple"="The system version is too low, please upgrade first, continue to use Sign In With Apple";

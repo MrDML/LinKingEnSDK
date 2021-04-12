@@ -2,8 +2,8 @@
 //  LENetWork.h
 //  LinKingEnSDK
 //
-//  Created by leoan on 2020/8/10.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/8/10.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(LENetWork *)sharedHttpSessionManager;
 + (void)getWithURLString:(NSString *)urlString success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 
+// SLS 日志服务请求
++ (void)sls_postWithURLString:(NSString *)urlString parameters:(NSDictionary *)parameters HTTPHeaderField:(NSDictionary *)headerField success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 // 参数不做处理
 + (void)postWithURLString:(NSString *)urlString parameters:(NSDictionary *)parameters success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 

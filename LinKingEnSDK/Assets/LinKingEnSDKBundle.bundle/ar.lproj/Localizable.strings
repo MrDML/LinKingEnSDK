@@ -13,6 +13,7 @@
 
 "Touch To Start" = "انقر للبدء";
 "I have read and agree" = "لقد قرأت وأوافق";
+"agree" = "يوافق على";
 "User Agreement" = "اتفاقية المستخدم";
 "Privacy Policy" = "سياسة الخصوصية";
 "ACCOUNT SETTING" = "إعدادات الحساب";
@@ -25,6 +26,9 @@
 "Bind successfully"="ربط بنجاح";
 "Cancel login"="إلغاء تسجيل الدخول";
 "OR"="أو";
+"Other Login"="تسجيل دخول آخر";
+"Guest Login"="زائر الرجاء تسجيل الدخول";
+"Agreement not checked"="لم يتم التحقق من الاتفاقية";
 "LICENSE AGREEMENT"="اتفاقية الترخيص";
 "Facebook"="الفيسبوك";
 "Google"="جوجل";
@@ -32,5 +36,6 @@
 "Tips" = "نصائح";
 "Invalid login or account login on other devices" = "انتهت صلاحية تسجيل الدخول أو تم تسجيل الحساب من جهاز آخر.";
 "Again login" = "الرجاء تسجيل الدخول مرة أخرى";
+"Login Successful"="تم تسجيل الدخول بنجاح";
 "Could not log in. Please check your network connection and try again" = "لا يمكن التسجيل. تحقق من الانترنت وأعد المحاولة";
 "The system version is too low, please upgrade first, continue to use Sign In With Apple"="إصدار النظام منخفض جدًا ، يرجى الترقية أولاً ، واستمر في استخدام تسجيل الدخول مع Apple";

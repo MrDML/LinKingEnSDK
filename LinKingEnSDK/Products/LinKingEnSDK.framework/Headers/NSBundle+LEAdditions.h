@@ -2,8 +2,8 @@
 //  NSBundle+LEAdditions.h
 //  LinKingEnSDK
 //
-//  Created by leoan on 2020/8/10.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/8/10.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

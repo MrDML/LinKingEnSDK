@@ -2,8 +2,8 @@
 //  LEApplePayManager.h
 //  LinKingEnSDK
 //
-//  Created by leoan on 2020/9/8.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/9/8.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -45,11 +45,13 @@ typedef void (^CompletionHandle)(PurchType type,NSError * _Nullable error);
 - (void)stopManager;
 
 /// 拉取所有商品信息
-- (void)requestProductDatasComplete:(void(^_Nullable)(NSError * _Nullable error, NSArray*_Nullable products))complete;
+- (void)itemsListOnFinished:(void(^)(NSError * _Nullable error, NSArray*_Nullable products))complete;
 
-//开始内购
-- (void)statrtProductWithId:(NSString *)productId parames:(NSDictionary *)parames completeHandle:(CompletionHandle)handle;
-
+/// 支付
+/// @param productId 商品Id
+/// @param parames 参数
+/// @param complete 回调完成
+- (void)pay:(NSString *)productId parames:(NSDictionary *)parames onFinished:(void(^)(PurchType type,NSError * _Nullable error))complete;
 // 查询订阅
 - (void)querysubscribeProduct:(NSString *)productId Complete:(void(^)(NSError *error, NSDictionary*results))complete;
 

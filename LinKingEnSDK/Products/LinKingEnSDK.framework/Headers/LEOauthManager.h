@@ -2,8 +2,8 @@
 //  LEOauthManager.h
 //  LinKingEnSDK
 //
-//  Created by leoan on 2020/8/7.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/8/7.
+//  Copyright © 2020 "". All rights reserved.
 //
 #import <UIKit/UIKit.h>
 
@@ -23,10 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIViewController *viewController;
 @property (nonatomic,copy)void(^changeAccountSuccessCallBack)(void);
 @property (nonatomic,copy)void(^bindingAccountCompleteCallBack)(LEUser *user,NSError *error);
-/// Dashboard方式登录
-/// @param viewController 根控制器
-/// @param complete 完成登录回调
-- (void)loginWithDashboardRootViewController:(UIViewController *)viewController complete:(void(^)(LEUser *user,NSError *error))complete;
+
+/// 登录接口
+/// @param rootViewController 根控制器
+/// @param complete complete description
+- (void)login:(UIViewController*)rootViewController onFinished:(void(^)(LEUser *user,NSError *error))complete;
+/// 登出
+- (void)logout;
 /// API方式登录
 /// @param viewController 根控制器
 /// @param complete 完成登录回调
@@ -36,8 +39,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showFloatViewDashboard:(UIViewController *)viewController;
 // 隐藏仪表盘
 - (void)hiddenFloatViewDashboard;
-/// 退出登录
-- (void)logOutSDK;
 /// 显示矩阵
 /// @param frame frame description
 -(void)showMatrixVieWithFrame:(CGRect)frame;

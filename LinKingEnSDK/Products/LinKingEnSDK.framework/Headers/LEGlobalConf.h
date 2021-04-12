@@ -2,13 +2,12 @@
 //  LEGlobalConf.h
 //  LinKingEnSDK
 //
-//  Created by leoan on 2020/8/10.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/8/10.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #ifndef LEGlobalConf_h
 #define LEGlobalConf_h
-// @"http://lk-hkres.oss-cn-hongkong.aliyuncs.com"
 #define SDKConfBaseURL  @"http://lk-hkres.chiji-h5.com"
 #define SDKConfPrefix @"/bgsys/matrix"
 // 数据存入沙盒的key

@@ -2,8 +2,8 @@
 //  UIImageView+LEWebCache.h
 //  LingKingSDK_Example
 //
-//  Created by leoan on 2020/4/14.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/4/14.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 

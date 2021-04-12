@@ -3,7 +3,7 @@
 //  LinKingEnSDK
 //
 //  Created by MrDML on 2020/8/16.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param level 等级
 - (void)logAchieveLevelEvent:(int)level serverId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName complete:(void(^_Nullable)(NSError * _Nullable error))complete;
 
+/// 创建角色
+- (void)logRoleCreate:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName;
 @end
 
 NS_ASSUME_NONNULL_END

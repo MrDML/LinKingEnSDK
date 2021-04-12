@@ -3,7 +3,7 @@
 //  LinKingEnSDK
 //
 //  Created by MrDML on 2020/8/16.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -44,6 +44,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param roleName 角色名
 - (void)logLevel:(int )level serverId:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName;
 
+
+/// 创建角色
+/// @param serverId 区服Id
+/// @param roleId 角色id
+/// @param roleName 角色名
+- (void)logRoleCreate:(NSString *)serverId roleId:(NSString *)roleId roleName:(NSString *)roleName;
+
+
 /// 无参自定义事件
 /// @param event 事件名
 - (void)logEvent:(NSString *)event;
@@ -51,7 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 有参自定义事件
 /// @param event 事件名
 /// @param values 参数
-- (void)logEvent:(NSString *)event withValues:(NSDictionary *)values;
+- (void)logEvent:(NSString *)event withValues:(NSDictionary * _Nullable)values;
 
 
 - (void)adLogEventName:(NSString *)eventName withParameters:(NSDictionary *_Nullable)params complete:(void(^_Nullable)(NSError *_Nullableerror))complete;

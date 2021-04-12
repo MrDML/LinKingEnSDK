@@ -2,8 +2,8 @@
 //  LEAdManager.h
 //  LinKingEnSDK
 //
-//  Created by leoan on 2020/8/17.
-//  Copyright © 2020 dml1630@163.com. All rights reserved.
+//  Created by leon on 2020/8/17.
+//  Copyright © 2020 "". All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -18,30 +18,54 @@ typedef NS_ENUM(NSInteger,LEPLATFORM) {
     LEPLATFORM_IronSource
 };
 
+typedef NS_ENUM(NSInteger, LKADTYPE) {
+    ADTYPE_REWARDVIDEO = 0,
+    ADTYPE_INTERSTITAL = 1,
+    ADTYPE_BANNER = 2,
+};
+
 
 @protocol LEAdManagerDelegate <NSObject>
 
 @optional
-- (void)bannerAdDidLoadPlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)bannerAdPlatform:(LEPLATFORM)platform subManager:(id)manager didLoadFail:(NSError * _Nullable)error;
-- (void)bannerAdDidClosePlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)bannerAdDidClickPlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)bannerAdDidVisiblePlatform:(LEPLATFORM)platform subManager:(id)manager;
+
+/// 横屏广告加载失败
+/// @param error 错误信息
+- (void)bannerAdDidLoadFail:(NSError * _Nullable)error;
+/// 横屏广告点击关闭
+- (void)bannerAdDidClose;
+/// 横屏广告点击
+- (void)bannerAdDidClick;
+/// 横屏广告呈现成功
+- (void)bannerAdDidVisible;
 
 
-- (void)rewardAdDidLoadPlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)rewardAdPlatform:(LEPLATFORM)platform subManager:(id)manager didLoadFail:(NSError * _Nullable)error;
-- (void)rewardAdDidClosePlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)rewardAdDidClickPlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)rewardAdDidVisiblePlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)rewardAdWinRewardPlatform:(LEPLATFORM)platform subManager:(id)manager;
+/// 激励视频加载失败
+/// @param error 错误信息
+- (void)rewardAdDidLoadFail:(NSError * _Nullable)error;
+/// 激励视频点击关闭
+- (void)rewardAdDidClose;
+/// 激励视频点击
+- (void)rewardAdDidClick;
+/// 激励视频呈现成功
+- (void)rewardAdDidVisible;
+/// 获取奖励
+- (void)rewardAdWinReward;
 
 
-- (void)interstitialAdDidLoadPlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)interstitialAdPlatform:(LEPLATFORM)platform subManager:(id)manager didLoadFail:(NSError * _Nullable)error;
-- (void)interstitialAdDidClosePlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)interstitialAdDidClickPlatform:(LEPLATFORM)platform subManager:(id)manager;
-- (void)interstitialAdDidVisiblePlatform:(LEPLATFORM)platform subManager:(id)manager;
+
+/// 插屏广告加载失败
+/// @param error 错误信息
+- (void)interstitialAdDidLoadFail:(NSError * _Nullable)error;
+/// 插屏广告关闭
+- (void)interstitialAdDidClose;
+/// 插屏广告点击
+- (void)interstitialAdDidClick;
+/// 插屏广告呈现成功
+- (void)interstitialAdDidVisible;
+
+/// 广告加载成功
+- (void)adDidFinishLoading:(LKADTYPE)type;
 
 
 @end
@@ -55,19 +79,16 @@ typedef NS_ENUM(NSInteger,LEPLATFORM) {
 /// 注册广告
 - (void)registerAd;
 
-/// 初始化Banner广告
-- (void)initializationBannerRootViewController:(UIViewController *)viewController superView:(UIView *)superView;
-/// 展示Banner广告
+/// 初始化广告
+/// @param type 广告类型
+/// @param viewController 控制器
+/// @param superView 视图
+- (void)initAd:(LKADTYPE)type rootViewController:(UIViewController * _Nonnull)viewController superView:(UIView * _Nullable)superView;
+
+/// 展示横屏
 - (void)showBanner;
-/// 移除Banner
-- (void)removeBannerViewFromSuperView;
-/// 初始化插屏广告
-- (void)initializationInterstitialAd:(UIViewController *)viewController;
 /// 展现插屏
 - (void)showInterstitialAd;
-
-/// 初始化激励视频广告
-- (void)initializationRewardVideoAd:(UIViewController *)viewController;
 /// 展示激励视频广告
 - (void)showRewardVideoAd;
 
