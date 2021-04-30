@@ -18,10 +18,15 @@ typedef NS_ENUM(NSInteger,LEPLATFORM) {
     LEPLATFORM_IronSource
 };
 
-typedef NS_ENUM(NSInteger, LKADTYPE) {
+typedef NS_ENUM(NSInteger, LEADTYPE) {
     ADTYPE_REWARDVIDEO = 0,
     ADTYPE_INTERSTITAL = 1,
     ADTYPE_BANNER = 2,
+};
+typedef NS_ENUM(NSInteger,LEPAYUSERTYPE) {
+    LE_UNDEFINED = 0,  // 未定义
+    LE_PAY = 1,        // 付费
+    LE_NOPAY = 2       // 非付费
 };
 
 
@@ -65,7 +70,7 @@ typedef NS_ENUM(NSInteger, LKADTYPE) {
 - (void)interstitialAdDidVisible;
 
 /// 广告加载成功
-- (void)adDidFinishLoading:(LKADTYPE)type;
+- (void)adDidFinishLoading:(LEADTYPE)type;
 
 
 @end
@@ -83,7 +88,7 @@ typedef NS_ENUM(NSInteger, LKADTYPE) {
 /// @param type 广告类型
 /// @param viewController 控制器
 /// @param superView 视图
-- (void)initAd:(LKADTYPE)type rootViewController:(UIViewController * _Nonnull)viewController superView:(UIView * _Nullable)superView;
+- (void)initAd:(LEADTYPE)type rootViewController:(UIViewController * _Nonnull)viewController superView:(UIView * _Nullable)superView;
 
 /// 展示横屏
 - (void)showBanner;
@@ -92,6 +97,15 @@ typedef NS_ENUM(NSInteger, LKADTYPE) {
 /// 展示激励视频广告
 - (void)showRewardVideoAd;
 
+/// 展示横屏
+/// @param type LK_UNDEFINED:未定义 LK_ALREADYPAY:已经付费 LK_NOPAY:非付费
+- (void)showBannerPayuser:(LEPAYUSERTYPE)type;
+/// 展现插屏
+/// @param type LK_UNDEFINED:未定义 LK_ALREADYPAY:已经付费 LK_NOPAY:非付费
+- (void)showInterstitialAdPayuser:(LEPAYUSERTYPE)type;
+/// 展示激励视频广告
+/// @param type LK_UNDEFINED:未定义 LK_ALREADYPAY:已经付费 LK_NOPAY:非付费
+- (void)showRewardVideoAdPayuser:(LEPAYUSERTYPE)type;
 
 @end
 
