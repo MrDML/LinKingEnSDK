@@ -14,7 +14,6 @@
 
 "Touch To Start" = "Touch To Start";
 "I have read and agree" = "I have read and agree";
-"agree" = "agree";
 "User Agreement" = "User Agreement";
 "Privacy Policy" = "Privacy Policy";
 "ACCOUNT SETTING" = "ACCOUNT SETTING";
@@ -23,13 +22,10 @@
 "Link your account"="Link your account";
 "Log out"="Log out";
 "The account is already bound"="The account is already bound";
-"Bind with Facebook or Google account to save your progress"="Bind with Facebook or Google account to save your progress";
+"Bind with Facebook or Apple account to save your progress"="Bind with Facebook or Apple account to save your progress";
 "Bind successfully"="Bind successfully";
 "Cancel login"="Cancel login";
 "OR"="OR";
-"Other Login"="Other Login";
-"Guest Login"="Guest Login";
-"Agreement not checked"="Agreement not checked";
 "LICENSE AGREEMENT"="LICENSE AGREEMENT";
 "Facebook"="Facebook";
 "Google"="Google";
@@ -40,3 +36,10 @@
 "Login Successful"="Login Successful";
 "Could not log in. Please check your network connection and try again" = "Could not log in. Please check your network connection and try again";
 "The system version is too low, please upgrade first, continue to use Sign In With Apple"="The system version is too low, please upgrade first, continue to use Sign In With Apple";
+"Sign in with Facebook"="Sign in with Facebook";
+"Sign in with Apple"="Sign in with Apple";
+"Guest Login" = "Guest Login";
+"Other Login" = "Other Login";
+"agree"="agree";
+"OK"="OK";
+"Agreement not checked"="Agreement not checked";

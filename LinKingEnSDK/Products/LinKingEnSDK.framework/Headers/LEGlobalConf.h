@@ -8,8 +8,6 @@
 
 #ifndef LEGlobalConf_h
 #define LEGlobalConf_h
-#define SDKConfBaseURL  @"http://lk-hkres.chiji-h5.com"
-#define SDKConfPrefix @"/bgsys/matrix"
 // 数据存入沙盒的key
 #define SDKCONFKEY @"SDKCONF"
 #define SYSTEMSDKKEY  @"SYSTEMSDK"
