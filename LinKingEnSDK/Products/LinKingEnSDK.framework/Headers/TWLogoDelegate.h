@@ -21,8 +21,9 @@ typedef enum {
    PurchReceiptInvalid = 9, 
    PurchOrderNotExist = 10, 
    PurchOrderClosed = 11, 
-   PurchOrderNoComplete = 12, 
-   PurchOrderFail = 13, 
+   PurchOrderNoComplete = 12,
+   PurchAbnormalOrder = 13,
+   PurchOrderFail = 14,
 }PurchType;
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^CompletionHandle)(PurchType type,NSError * _Nullable error);
